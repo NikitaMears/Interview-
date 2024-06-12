@@ -1,30 +1,3 @@
-
-## Full Stack Developer Interview Questions
-
-### GraphQL
-
-1. **What is GraphQL, and how does it differ from REST?**
-   - **Answer:** GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. Unlike REST, which has multiple endpoints that return fixed data structures, GraphQL uses a single endpoint and allows clients to specify the exact data they need. This reduces over-fetching and under-fetching of data.
-
-2. **Can you explain the concepts of queries, mutations, and subscriptions in GraphQL?**
-   - **Answer:**
-     - **Queries:** Used to fetch data from the server. They are analogous to GET requests in REST.
-     - **Mutations:** Used to modify server-side data. They are analogous to POST, PUT, DELETE requests in REST.
-     - **Subscriptions:** Used to maintain a real-time connection with the server, allowing clients to receive updates when data changes. They are similar to WebSockets.
-
-3. **How do you handle authentication and authorization in a GraphQL API?**
-   - **Answer:** Authentication is typically handled by passing a token (e.g., JWT) in the HTTP headers of the GraphQL request. Authorization can be enforced at the resolver level by checking the user's permissions before executing the resolver's logic. Middleware functions or directives can also be used for authorization checks.
-
-4. **Describe a situation where you used GraphQL to solve a complex data-fetching problem.**
-   - **Answer:** In a project requiring data from multiple related resources, using REST would have resulted in multiple round-trips to the server and over-fetching of data. By using GraphQL, I defined a single query to fetch only the necessary fields from multiple types, reducing the number of network requests and the amount of data transferred.
-
-5. **What are the benefits and potential drawbacks of using GraphQL?**
-   - **Answer:**
-     - **Benefits:** Flexibility in querying data, reduced over-fetching and under-fetching, strong typing, and a single endpoint for all data requests.
-     - **Drawbacks:** Complexity in setting up and maintaining the server, potential for performance issues with poorly designed queries, and the need for clients and servers to agree on the schema.
-
----
-
 ### README
 
 # Full Stack Developer Interview Questions
